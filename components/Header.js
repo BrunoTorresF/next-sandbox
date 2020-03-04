@@ -22,11 +22,11 @@ const Header = () => {
 			</div>
 			<style jsx>{`
 				.header {
-					border: 1px solid blue;
 					display: grid;
 					grid-template-columns: repeat(6, auto);
 					align-items: center;
-					padding: 0 3.25em;
+          padding: 0 3.25em;
+          border-bottom: 1px solid var(--spanish-grey-100);
 				}
 
 				.navigation {
@@ -47,7 +47,7 @@ const Header = () => {
 					color: inherit;
 				}
 
-				.nav-item:nth-of-type(odd):not(:last-of-type) {
+				.nav-item:not(:last-of-type) {
 					margin-right: 2em;
 				}
 
@@ -57,14 +57,6 @@ const Header = () => {
 					grid-column-start: 6;
 					grid-column-end: 7;
 					padding-right: 1.625em;
-				}
-
-				.btn-cta {
-					padding: 0.9375em 1.5625em;
-					color: teal;
-					border: 1px solid teal;
-					border-radius: 5px;
-					background-color: transparent;
 				}
 
 				.btn-cta:nth-of-type(1) {

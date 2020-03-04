@@ -5,13 +5,11 @@ const Home = () => (
   <Layout>
     <main>
       <Hero />
-      <Hero />
     </main>
-
     <style jsx>{`
       main {
-        padding: 5rem 0;
-        border: 1px solid orange;
+        padding-top: 80px;
+        scroll-behavior: smooth;
       }
     `}</style>
   </Layout>

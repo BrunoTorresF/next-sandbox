@@ -1,0 +1,105 @@
+@import url('http://fonts.googleapis.com/css?family=Doppio+One&display=swap');
+
+/* RGB */
+$hansa-yellow: rgba(233, 215, 88, 1);
+$spanish-grey: rgba(145, 144, 152, 1);
+$piggy-pink: rgba(255, 221, 226, 1);
+$diamond: rgba(201, 251, 255, 1);
+$payne-grey: rgba(97, 112, 125, 1);
+
+:root {
+  --hansa-yellow-100: rgba(243, 233, 191, 1);
+  --hansa-yellow-200: rgba(234, 219, 148, 1);
+  --hansa-yellow: rgba(221, 195, 79, 1);
+  --hansa-yellow-600: rgba(218, 189, 63, 1);
+  --hansa-yellow-800: rgba(192, 164, 37, 1);
+  --spanish-grey-100: rgba(216, 215, 218, 1);
+  --spanish-grey-200: rgba(189, 189, 194, 1);
+  --spanish-grey: rgba(145, 144, 152, 1);
+  --spanish-grey-600: rgba(112, 110, 119, 1);
+  --spanish-grey-800: rgba(37, 37, 40, 1);
+  --piggy-pink-100: rgba(255, 229, 233, 1);
+  --piggy-pink-200: rgba(255, 179, 189, 1);
+  --piggy-pink: rgba(255, 178, 189, 1);
+  --piggy-pink-600: rgba(255, 128, 146, 1);
+  --piggy-pink-800: rgba(255, 77, 102, 1);
+  --diamond-100: rgba(229, 251, 255, 1);
+  --diamond-200: rgba(179, 242, 255, 1);
+  --diamond: rgba(124, 232, 255, 1);
+  --diamond-600: rgba(77, 224, 255, 1);
+  --diamond-800: rgba(26, 215, 255, 1);
+  --payne-grey-100: rgba(212, 217, 222, 1);
+  --payne-grey-200: rgba(183, 192, 199, 1);
+  --payne-grey: rgba(97, 112, 125, 1);
+  --payne-grey-600: rgba(78, 90, 101, 1);
+  --payne-grey-800: rgba(56, 64, 72, 1);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Doppio One', sans-serif;
+}
+
+.btn-cta {
+  padding: 0.9375em 1.5625em;
+  color: white;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--diamond);
+  border-radius: 5px;
+  border: none;
+}
+
+.subtle {
+  color: var(--diamond);
+  border: 2px solid var(--diamond);
+  border-radius: 5px;
+  background-color: transparent;
+}
