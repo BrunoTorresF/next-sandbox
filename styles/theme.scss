@@ -88,18 +88,29 @@ q:before, q:after {
 .btn-cta {
   padding: 0.9375em 1.5625em;
   color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 0.25em;
+  transition: opacity 260ms ease;
   cursor: pointer;
 }
 
 .primary {
   background-color: var(--diamond);
-  border-radius: 5px;
   border: none;
+
+  img {
+
+  }
 }
 
 .subtle {
   color: var(--diamond);
   border: 2px solid var(--diamond);
-  border-radius: 5px;
   background-color: transparent;
 }

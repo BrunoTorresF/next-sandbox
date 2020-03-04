@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Header = () => {
 	return (
-		<header className="header">
+		<header className="header container">
 			<div className="navigation">
 				<figure className="header-logo">
 					<img src="https://i.picsum.photos/id/1025/50/50.jpg" />

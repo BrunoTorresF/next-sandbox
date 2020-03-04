@@ -4,7 +4,7 @@ import Footer from './Footer'
 
 const Layout = ({children}) => {
   return (
-    <div className="container">
+    <div className="layout container">
       <Head>
         <title>SANDBOX</title>
         <link rel="icon" href="/favicon.ico" />
@@ -13,18 +13,20 @@ const Layout = ({children}) => {
       {children}
       <Footer />
       <style jsx global>{`
-        .container {
+        .layout {
           display: grid;
           grid-template-areas:
             "header header header header"
             "main main main main"
             "footer footer footer footer";
           grid-template-rows: 10vh 1fr 15vh;
-          width: calc(100% - 1.5em);
-          margin: 0 auto;
 
           > header {
             grid-area: header;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 1;
           }
 
           > main {
@@ -33,6 +35,11 @@ const Layout = ({children}) => {
 
           > footer {
             grid-area: footer;
+          }
+
+          .container {
+            width: calc(100% - 1.5em);
+            margin: 0 auto;
           }
         }
     `}</style>
