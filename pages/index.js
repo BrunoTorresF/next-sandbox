@@ -7,23 +7,31 @@ const Home = () => (
       <Hero />
       <section>
         <div className="headline">
-          <h3 className="headline-title">Hosting guests will no longer require any effort.</h3><br /><strong>
+          <h3 className="headline-title">
+            Hosting guests will no longer require any effort.
+          </h3>
+          <br />
+          <strong>
             We'll take care of everything for you, from start to finish.
           </strong>
           <div className="text-component headline-description">
-            <p>We help you host with a complete and simple solution designed for people who don't have the time. The satisfaction of your guests is our top priority.</p>
+            <p>
+              We help you host with a complete and simple solution designed for
+              people who don't have the time. The satisfaction of your guests is
+              our top priority.
+            </p>
           </div>
         </div>
       </section>
       <aside>
         <div className="announcement container">
           <div className="announcement-inset">
-            <figure><img src="https://picsum.photos/id/1039/80/87" className="lazy"/></figure>
+            <figure className="announcement-figure">
+              <img src="https://picsum.photos/id/1039/80/87" className="lazy" />
+            </figure>
             <div className="text-component">
               Since the beginning, [client] has become a
-              <strong>
-                family owned business.
-              </strong>
+              <strong>family owned business.</strong>
             </div>
           </div>
         </div>
@@ -60,11 +68,11 @@ const Home = () => (
           color: var(--spanish-grey-800);
         }
 
-        &>:first-child {
+        & > :first-child {
           margin-top: 0;
         }
 
-        &>:last-child {
+        & > :last-child {
           margin-bottom: 0;
         }
       }
@@ -95,6 +103,6 @@ const Home = () => (
       }
     `}</style>
   </Layout>
-)
+);
 
-export default Home
+export default Home;
